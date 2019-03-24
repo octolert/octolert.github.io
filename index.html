@@ -1,41 +1,114 @@
 <html>
-  <head>
-    <title>🐙🔈 Octolert</title>
-    </head>
-    <body style="background-color: #2D0525">
-      <style>
-        .center {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-          color: #fff;
-          font-family:Verdana, Geneva, Tahoma, sans-serif;
-          font-size: 18px;
-          text-align: center;
-        }
-      </style>
-      <div class="center">
-      <img src="octolert-logo.png" alt="Octolert Logo" />
-      <div>
-      <p>Octolert monitors your Axosoft Glo Boards and alerts you by playing sounds and flashing the lights with any changes you want to keep track of. Totally cross-platform; you will even be able to hook it up to a raspberry pi with some attached speakers to have your own <i>‘Octobuddy’</i> let you know what’s going on.</p>
 
-      <p>Start it running with just one simple command and then integrate it with Glo Boards using a super simple web console; accessible from anywhere on your network. Sign up to our mailing list to be the first to know when this fun productivity tool is released.</p>
-    </div>
+<head>
+  <title>🐙🔈 Octolert</title>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+
+<body style="background-color: #2D0525">
+  <style>
+    .logo {
+      font-family: 'Varela Round', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #FF4654;
+      font-size: 5em;
+      text-decoration: none;
+
+    }
+    .text {
+      font-family: 'Varela Round', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      position: absolute;
+      color: #FFECA1;
+      left: 25%;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    @media screen and (min-width:1px) and (max-width:1750px) {
+      .center {
+      position: relative;
+      top: 5%;
+      width: 50%;
+      text-align: center;
+    }
+    .glo {
+      position: relative;
+      width: 150%;
+      left: 25%;
+      margin-top: 85%;
+    }
+    .octo {
+      position: absolute;
+      left: 105%;
+      width: 75%;
+    }
+    .email {
+      position: relative;
+    }
+    .button {
+      position: relative;
+      left: 0%;
+      margin-top: 1%;
+    }
+    }
+    @media screen and (min-width:1750px) {
+    .center {
+      position: relative;
+      top: 5%;
+      width: 50%;
+      text-align: center;
+    }
+    .glo {
+      position: relative;
+      left: 25%;
+      margin-top: 45%;
+    }
+    .octo {
+      position: absolute;
+      left: 105%;
+      width: 75%;
+    }
+    .email {
+      position: relative;
+    }
+    .button {
+      position: relative;
+      left: 27%;
+      margin-top: -3.3%;
+    }
+    }
+
+
+  </style>
+  <div class="center">
+    <div class="text">
+    <div><a class="logo" href="https://www.npmjs.com/package/octolert">OCTOLERT</a></div>
+    Octolert monitors your Axosoft Glo Boards and alerts you with any changes you want to keep track of. Totally cross-platform;
+    <p>
+    Install locally with:<br>
+    $ npm install octolert -g<br>
+    $ octolert<p>
+    Or with npx:<br>
+    $ npx octolert<p>
+    Sign up to our mailing list to be the first to know when this fun productivity tool is fully released.
     <div id="mc_embed_signup">
-      <form action="https://nnug.us19.list-manage.com/subscribe/post?u=08ca8bde07b543642ad31fb33&amp;id=352ce6aaae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-        
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_08ca8bde07b543642ad31fb33_352ce6aaae" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-      </form>
-      </div>
-    </div>
-      <!-- Begin Mailchimp Signup Form -->
+        <form action="https://nnug.us19.list-manage.com/subscribe/post?u=08ca8bde07b543642ad31fb33&amp;id=352ce6aaae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
 
-<!--End mc_embed_signup-->
-    </body>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_08ca8bde07b543642ad31fb33_352ce6aaae" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+    </div>
+    <img src="octobuddie.svg" alt="Octolert Logo" class="octo"/>
+    <img src="cards.svg" class="glo"/>
+  </div>
+</body>
+
 </html>
